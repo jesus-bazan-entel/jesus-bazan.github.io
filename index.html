@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jesús Ricardo Bazán Lozano | Data, Telecom & IA</title>
+  <meta name="description" content="Especialista en ingeniería de datos, redes Core & IMS y automatización con IA para telecomunicaciones.">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/1" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-light: #111827;
+      --card: rgba(15, 23, 42, 0.5);
+      --primary: #38bdf8;
+      --accent: #f97316;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --radius: 18px;
+      --max: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1f2937, #020617 60%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, rgba(3,105,161,0.4), rgba(0,0,0,0));
+      border-bottom: 1px solid rgba(148,163,184,0.1);
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(8px);
+    }
+    nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .7rem 1rem;
+    }
+    nav .brand {
+      font-weight: 700;
+      letter-spacing: .04em;
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: .9rem;
+    }
+    .menu a {
+      margin-left: 1rem;
+      opacity: .8;
+    }
+    .menu a:hover { opacity: 1; color: #fff; }
+    .btn {
+      background: var(--primary);
+      color: #0f172a;
+      padding: .5rem 1rem;
+      border-radius: 999px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      transition: transform .15s ease-out;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2.5rem 1rem 3rem 1rem;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .badge {
+      background: rgba(56,189,248,0.15);
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .35rem .75rem;
+      border-radius: 999px;
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      border: 1px solid rgba(56,189,248,0.4);
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: clamp(2.3rem, 3.7vw, 3rem);
+      margin: 0 0 1rem 0;
+      line-height: 1.1;
+    }
+    .hero p {
+      color: var(--muted);
+      max-width: 38rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-card {
+      background: radial-gradient(circle at 10% 10%, rgba(56,189,248,0.2), rgba(15,23,42,0));
+      border: 1px solid rgba(148,163,184,0.12);
+      border-radius: var(--radius);
+      padding: 1.3rem 1.5rem 1.5rem;
+      height: fit-content;
+    }
+    .hero-card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .projects, .exp, .certs {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .card {
+      background: rgba(15, 23, 42, 0.35);
+      border: 1px solid rgba(148,163,184,0.12);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem 1.1rem;
+    }
+    .card small { color: var(--muted); }
+    .tag {
+      display: inline-block;
+      background: rgba(148,163,184,0.12);
+      border: 1px solid rgba(148,163,184,0.18);
+      padding: .1rem .5rem;
+      border-radius: 999px;
+      font-size: .65rem;
+      margin-right: .35rem;
+      margin-bottom: .35rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem 3.5rem;
+      color: var(--muted);
+      font-size: .75rem;
+      border-top: 1px solid rgba(148,163,184,0.05);
+      background: linear-gradient(180deg, rgba(15,23,42,0), rgba(2,6,23,1));
+    }
+    @media (max-width: 880px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      nav .menu {
+        display: none;
+      }
+      main { padding-top: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">JRBL · Data & Telecom</div>
+    <div class="menu">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <a class="btn" href="#contacto">Hablemos</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="badge">IA aplicada · Telecom · Datos en tiempo real</div>
+      <h1>Diseño soluciones de voz, datos e IA que operan en tiempo real.</h1>
+      <p>
+        Soy Jesús Ricardo Bazán Lozano, ingeniero con +15 años en telecom y data. 
+        He integrado plataformas SIP (Kamailio, FreeSWITCH, dSIPRouter), facturación en tiempo real con CGRateS,
+        y ecosistemas de analítica con Grafana, Influx/PostgreSQL y pipelines ETL sobre Oracle.
+      </p>
+      <p><strong>Elevator pitch:</strong> “Ayudo a operadores y empresas a modernizar sus plataformas de voz y datos
+        usando IA, automatización y buenas prácticas TM Forum, para que puedan tomar decisiones en tiempo real y ofrecer
+        servicios más inteligentes a sus clientes.”</p>
+      <a class="btn" href="#proyectos">Ver proyectos</a>
+    </div>
+    <div class="hero-card">
+      <h2>Qué puedo hacer por tu organización</h2>
+      <ul>
+        <li>✅ Migrar y optimizar plataformas VoIP / Softswitch (Kamailio + FreeSWITCH)</li>
+        <li>✅ Integrar CGRateS con bases de datos (Postgres / Supabase) para billing en tiempo real</li>
+        <li>✅ Diseñar dashboards operacionales (Grafana, Prometheus) para clientes multi-tenant</li>
+        <li>✅ Construir ETLs Oracle ODI para telecom (HSS, RAID, WFM, EOC)</li>
+        <li>✅ Guiar roadmap de IA y automatización alineado a TM Forum</li>
+      </ul>
+      <p style="color:var(--muted);font-size:.8rem;">Disponible para asesorías, implementación y entrenamiento de equipos.</p>
+    </div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section id="sobre-mi">
+    <h2 class="section-title">Sobre mí</h2>
+    <p>
+      Especialista en <strong>Core & IMS</strong>, <strong>ingeniería de datos</strong> y <strong>automatización con IA</strong>. 
+      He liderado proyectos en entornos de telecom de alta exigencia (Entel, Americatel, ecosistema Apolo Next)
+      donde la disponibilidad, trazabilidad y multi-tenant son claves.
+    </p>
+    <p>
+      Trabajo con: Kamailio, dSIPRouter, FreeSWITCH, RTPengine, CGRateS, PostgreSQL, InfluxDB, Oracle, Kafka, Grafana,
+      Docker / Debian 12, y arquitecturas híbridas con Azure.  
+      También estoy construyendo experiencias e-learning y asistentes de voz con IA.
+    </p>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia">
+    <h2 class="section-title">Experiencia destacada</h2>
+    <div class="grid exp">
+      <div class="card">
+        <h3>Arquitectura VoIP / Softswitch</h3>
+        <small>Kamailio · FreeSWITCH · dSIPRouter</small>
+        <p>Diseño de plataforma SIP multi-tenant con ruteo avanzado, JSON-RPC, alta disponibilidad y monitoreo.</p>
+      </div>
+      <div class="card">
+        <h3>Data & ETL para Telecom</h3>
+        <small>Oracle ODI · HSS · RAID · EOC/ORC</small>
+        <p>Normalización de dumps HSS, cargas hacia RAID, control de errores, housekeeping y particionamiento.</p>
+      </div>
+      <div class="card">
+        <h3>Billing en tiempo real</h3>
+        <small>CGRateS + PostgreSQL/Supabase</small>
+        <p>Integración de rating prepago/postpago, perfiles por cuenta/IP, monitoreo en tiempo real.</p>
+      </div>
+      <div class="card">
+        <h3>IA & Automatización (TM Forum)</h3>
+        <small>Certificación AI & Automation Overview – Deploying in ODA</small>
+        <p>Diseño de roadmap de automatización aplicada a operaciones de red y canales digitales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <h2 class="section-title">Proyectos y líneas que manejo</h2>
+    <div class="grid projects">
+      <div class="card">
+        <h3>Apolo Next / Apolo OpenVoIPs</h3>
+        <p>Plataforma propia para clientes de voz sobre IP con Kamailio + CGRateS + Grafana.</p>
+        <div>
+          <span class="tag">Kamailio</span>
+          <span class="tag">CGRateS</span>
+          <span class="tag">Debian 12</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Dashboard SIP Centralizado</h3>
+        <p>Backend en FastAPI y PostgreSQL + frontend React para monitorear tráfico SIP multicliente.</p>
+        <div>
+          <span class="tag">FastAPI</span>
+          <span class="tag">React</span>
+          <span class="tag">Grafana</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>E-learning tipo Duolingo</h3>
+        <p>Arquitectura en Azure + app Flutter (PrimeLMS) + Supabase para auth y contenido.</p>
+        <div>
+          <span class="tag">Flutter</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Azure</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Automatización ODI / Control-M</h3>
+        <p>Definición de jobs ETL, dummy jobs y flujos de envío de archivos hacia BI/RAID.</p>
+        <div>
+          <span class="tag">ODI</span>
+          <span class="tag">Control-M</span>
+          <span class="tag">Oracle</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICACIONES -->
+  <section id="certificaciones">
+    <h2 class="section-title">Certificaciones & formación</h2>
+    <div class="grid certs">
+      <div class="card">
+        <h3>TM Forum – AI & Automation Overview (ODA)</h3>
+        <p>Enfoque en ecosistemas AI-driven, resilientes y autónomos para telcos.</p>
+      </div>
+      <div class="card">
+        <h3>Ingeniería de Datos y ML aplicado</h3>
+        <p>Modelos de regresión y redes neuronales con Apache Spark y bases open source.</p>
+      </div>
+      <div class="card">
+        <h3>DevOps & Observabilidad</h3>
+        <p>Docker, métricas para Kamailio, Prometheus, Grafana, ClickHouse/Qryn.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2 class="section-title">Contacto</h2>
+    <p>¿Te interesa que exploremos juntos cómo la IA puede optimizar tus redes o procesos operativos? Escríbeme 👇</p>
+    <p>
+      📧 <a href="mailto:jesus.bazan@example.com" style="color:var(--primary);">jesus.bazan@example.com</a><br />
+      💼 LinkedIn: <a href="https://www.linkedin.com" style="color:var(--primary);">Disponible bajo solicitud</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Jesús Ricardo Bazán Lozano · Apolo Next · IA · Telecom · Data
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
